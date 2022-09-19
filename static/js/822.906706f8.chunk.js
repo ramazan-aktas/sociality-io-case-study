@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunksociality_io=self.webpackChunksociality_io||[]).push([[822],{822:function(e,i,s){e.exports=s.p+"static/media/retweet.51b143c31579ec7f1f24.svg"}}]);
