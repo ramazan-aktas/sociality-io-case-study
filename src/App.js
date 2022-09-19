@@ -1,8 +1,8 @@
 import sociality_logo from "./img/Sociality-logo.png";
 import Avatar from "./components/Avatar";
-import Legend from "./components/Legend/Legend";
+import Legend from "./components/legend/Legend";
 import ListPostCards from "./components/ListPostCards";
-import Sidebar from "./components/Sidebar/Sidebar";
+import Sidebar from "./components/sidebar/Sidebar";
 function App() {
   return (
     <div className="grid grid-cols-12 w-full font-raleway overflow-clip min-h-screen">
