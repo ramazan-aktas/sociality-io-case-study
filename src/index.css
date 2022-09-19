@@ -1,13 +1,36 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+
+.sidebar-logo {
+@apply rounded-lg w-5/6 mx-1 px-[2px] my-3 bg-blend-overlay opacity-30
+}
+.see-more{
+  @apply pr-2 text-3xl self-center font-extralight text-black
+}
+.right-col-link{
+  @apply w-full svg-icon px-2 font-raleway font-medium text-[#fffefe] text-[14px] inline-flex pt-2 hover:bg-[#f55661] pb-1 my-1 cursor-pointer
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@tailwind utilities;
+@layer base {
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+      "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+      "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+      monospace;
+  }
+}
+
+@layer utilities {
+  .svg-icon svg {
+    align-self: center;
+    vertical-align: middle;
+  }
 }
