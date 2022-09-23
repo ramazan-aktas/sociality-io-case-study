@@ -45,13 +45,13 @@ const Sidebar = () => {
           onClick={() => setOpen(!open)}
         />
         <LogoSection openness={!open} />
-        <div className="grid grid-cols-5 min-h-full">
+        <div className="grid grid-cols-7 min-h-full">
           <ListCustomers openness={!open} />
           {
             // Hide right column when it is collapsed
           }
           {open && (
-            <div className="col-span-4 bg-[#44484d] min-h-full">
+            <div className="col-span-6 bg-[#44484d] min-h-full">
               <RightColumn />
             </div>
           )}

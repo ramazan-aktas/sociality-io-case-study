@@ -20,7 +20,7 @@ export default function Card({ channel, status, dateTime, message, imageURL }) {
       }
     }
   return (
-    <div className="grid grid-cols-9 h-auto rounded-r-md">
+    <div className="grid grid-cols-12 h-auto rounded-r-md">
       {/* Left Logo Column */}
       <div className={cardSidebar()}>
         <CardSidebar channel={channel}/>
@@ -28,7 +28,7 @@ export default function Card({ channel, status, dateTime, message, imageURL }) {
       {/* Left Logo Column END*/}
 
       {/* Right Content Column */}
-      <div className="col-span-8 flex flex-col bg-white border-t-2 border-b-2 border-r-2 border-solid border-color[#e5e6ee] rounded-r-md pt-7 px-5">
+      <div className="col-span-11 flex flex-col bg-white border-t-2 border-b-2 border-r-2 border-solid border-color[#e5e6ee] rounded-r-md pt-7 px-5">
         <div className="grid grid-cols-2 pb-6">
           {/* Publish DateTime */}
 
