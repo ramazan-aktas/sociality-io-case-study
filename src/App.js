@@ -1,39 +1,30 @@
-import sociality_logo from "./img/Sociality-logo.png";
-import Avatar from "./components/Avatar";
-import Legend from "./components/legend/Legend";
-import ListPostCards from "./components/ListPostCards";
 import Sidebar from "./components/sidebar/Sidebar";
+import { Outlet, useNavigate, useParams } from "react-router-dom";
+import { useEffect } from "react";
 function App() {
-  return (
-    <div className="grid grid-cols-12 w-full font-raleway overflow-clip min-h-screen">
+  const { companyName } = useParams();
+  // If companyName is undefined, navigate to the solution page
+  const navigate = useNavigate();
+  useEffect(() => {
+    if (companyName === undefined) {
       
-      <div className="bg-[#f5f7f8] col-span-3 lg:col-span-2 h-full">
-        <Sidebar/>
-        {/* Logo Section */}
-        <div className="w-full bg-[#31363b] h-12">
-          <img src={sociality_logo} className="mx-auto py-3"></img>
-        </div>
-        {/* Logo Section END*/}
-        <div className="grid grid-cols-4 min-h-full">
-          <div className="bg-[#303438] col-span-1 min-h-full"></div>
-          <div className="col-span-3 bg-[#44484d] min-h-full"></div>
-        </div>
-      </div>
+      navigate("/socialorientation_test/publish/feed");
+    }
+
+    return () => {
+      console.log("Navigation is successfull")
+    };
+    // eslint-disable-next-line
+  }, [companyName]);
+
+  return (
+    <div className="grid grid-cols-11 w-full font-raleway overflow-clip min-h-screen">
+      <Sidebar />
 
       {/* Right Column */}
-      <div className="bg-[#f5f7f8] h-auto col-span-9 lg:col-span-10 px-1 sm:px-4 md:px-8 lg:px-12 pt-8 pb-12">
-        {/* Right Column Top section */}
-        <div className="w-full grid grid-cols-4">
-          <Legend />
-          <Avatar fileName="Picture.png" />
-        </div>
-        {/* Right Column Top section END*/}
-        <div className="grid grid-cols-1 xl:grid-cols-3 h-full pb-12 gap-6">
-          <ListPostCards username="socialorientation_test"/>
-        </div>
+      <div className="bg-[#f5f7f8] h-auto col-span-9 px-1 sm:px-4 md:px-8 lg:px-12 pt-8 pb-12">
+        <Outlet />
       </div>
-
-
     </div>
   );
 }

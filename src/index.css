@@ -2,13 +2,14 @@
 @tailwind components;
 
 .sidebar-logo {
-@apply rounded-lg w-5/6 mx-1 px-[2px] my-3 bg-blend-overlay opacity-30
+  @apply rounded-lg w-5/6 mx-1 px-[2px] my-3 bg-blend-overlay;
 }
-.see-more{
-  @apply pr-2 text-3xl self-center font-extralight text-black
+
+.see-more {
+  @apply pr-2 text-3xl self-center font-extralight text-black;
 }
-.right-col-link{
-  @apply w-full svg-icon px-2 font-raleway font-medium text-[#fffefe] text-[14px] inline-flex pt-2 hover:bg-[#f55661] pb-1 my-1 cursor-pointer
+.right-col-link {
+  @apply w-full svg-icon px-2 font-raleway hover:text-[#fffefe] text-[14px] inline-flex pt-2 hover:bg-[#f55661] pb-1 my-1 cursor-pointer;
 }
 
 @tailwind utilities;
