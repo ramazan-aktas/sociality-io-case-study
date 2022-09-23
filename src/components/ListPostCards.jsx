@@ -1,11 +1,12 @@
 import data from "../data.json";
 import { v4 as uuid } from "uuid";
 import Card from "./post-card/Card";
+import React from "react";
 export default function ListPostCards({ username }) {
   const dateTimeConv = new Intl.DateTimeFormat("en-GB", {
     year: "numeric",
     month: "long",
-    day: "numeric"
+    day: "numeric",
   });
   const dateTimePub = new Intl.DateTimeFormat("en-GB", {
     year: "numeric",
@@ -14,15 +15,14 @@ export default function ListPostCards({ username }) {
     hour: "2-digit",
     minute: "numeric",
     second: "numeric",
-    hourCycle: "h24"
+    hourCycle: "h24",
   });
   const innerData = data.posts_by_date;
   const byDate = Object.keys(innerData)
     .reverse()
     .map((key) => (
-      <>
+      <React.Fragment key={uuid()}>
         <div
-          key={uuid()}
           className="col-span-full font-barlow text-[22px] text-[#959595]"
         >
           {dateTimeConv.format(new Date(`${key}`))}
@@ -35,11 +35,13 @@ export default function ListPostCards({ username }) {
               status={obj.status}
               message={obj.entry.message}
               imageURL={obj.entry.image[0]}
-              dateTime={dateTimePub.format(new Date(`${obj.published_at}`)).replace("at ", "")}
+              dateTime={dateTimePub
+                .format(new Date(`${obj.published_at}`))
+                .replace("at ", "")}
               channel={obj.account.channel}
             />
           ))}
-      </>
+      </React.Fragment>
     ));
 
   return <>{byDate}</>;
