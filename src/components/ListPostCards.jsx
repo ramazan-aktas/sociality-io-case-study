@@ -2,6 +2,11 @@ import data from "../data.json";
 import { v4 as uuid } from "uuid";
 import Card from "./post-card/Card";
 export default function ListPostCards({ username }) {
+  const dateTimeConv = new Intl.DateTimeFormat("en-GB", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
   const innerData = data.posts_by_date;
   const byDate = Object.keys(innerData)
     .reverse()
@@ -11,7 +16,7 @@ export default function ListPostCards({ username }) {
           key={uuid()}
           className="col-span-full font-barlow text-[22px] text-[#959595]"
         >
-          {key}
+          {dateTimeConv.format(new Date(`${key}`))}
         </div>
         {Object.values(innerData[key])
           //Some filtering later
