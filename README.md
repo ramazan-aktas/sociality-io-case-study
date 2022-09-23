@@ -8,6 +8,6 @@ Provided JSON data is consumed with ```.reverse()``` and ```.map()``` to be in t
 
 Since it is a standalone build, undefined companyName params are redirected to the solution page, which is ```socialorientation_test/publish/feed``` via ```useNavigate```, thus the homepage goes there, too. For other menu options like Engage or Report, default boilerplate pages are created to be used through ```<Outlet/>```.
 
-
+To checkout live at gh-pages, please visit [here](https://ramazan-aktas.github.io/sociality-io-case-study/)
 
 
