@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/sociality-io-case-study/static/css/main.f369975e.css",
-    "main.js": "/sociality-io-case-study/static/js/main.a1fdff25.js",
+    "main.css": "/sociality-io-case-study/static/css/main.bcd07afa.css",
+    "main.js": "/sociality-io-case-study/static/js/main.4a5d84cd.js",
     "static/js/742.f99cf6c2.chunk.js": "/sociality-io-case-study/static/js/742.f99cf6c2.chunk.js",
     "static/js/481.7ea043e2.chunk.js": "/sociality-io-case-study/static/js/481.7ea043e2.chunk.js",
     "static/js/822.906706f8.chunk.js": "/sociality-io-case-study/static/js/822.906706f8.chunk.js",
@@ -13,11 +13,11 @@
     "static/media/no-post-image.png": "/sociality-io-case-study/static/media/no-post-image.67ed9c632e4c2b064ca0.png",
     "static/media/retweet.svg": "/sociality-io-case-study/static/media/retweet.51b143c31579ec7f1f24.svg",
     "index.html": "/sociality-io-case-study/index.html",
-    "main.f369975e.css.map": "/sociality-io-case-study/static/css/main.f369975e.css.map",
-    "main.a1fdff25.js.map": "/sociality-io-case-study/static/js/main.a1fdff25.js.map"
+    "main.bcd07afa.css.map": "/sociality-io-case-study/static/css/main.bcd07afa.css.map",
+    "main.4a5d84cd.js.map": "/sociality-io-case-study/static/js/main.4a5d84cd.js.map"
   },
   "entrypoints": [
-    "static/css/main.f369975e.css",
-    "static/js/main.a1fdff25.js"
+    "static/css/main.bcd07afa.css",
+    "static/js/main.4a5d84cd.js"
   ]
 }
