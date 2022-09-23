@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/sociality-io-case-study/static/css/main.bcd07afa.css",
-    "main.js": "/sociality-io-case-study/static/js/main.5eba5194.js",
+    "main.css": "/sociality-io-case-study/static/css/main.8a59d9a5.css",
+    "main.js": "/sociality-io-case-study/static/js/main.04614623.js",
     "static/js/742.f99cf6c2.chunk.js": "/sociality-io-case-study/static/js/742.f99cf6c2.chunk.js",
     "static/js/481.7ea043e2.chunk.js": "/sociality-io-case-study/static/js/481.7ea043e2.chunk.js",
-    "static/js/822.906706f8.chunk.js": "/sociality-io-case-study/static/js/822.906706f8.chunk.js",
+    "static/js/822.e16c2a53.chunk.js": "/sociality-io-case-study/static/js/822.e16c2a53.chunk.js",
     "static/media/Logo3.png": "/sociality-io-case-study/static/media/Logo3.12b939177c4024ce4ab3.png",
     "static/media/Logo1.png": "/sociality-io-case-study/static/media/Logo1.8337127ccfc8445d1da6.png",
     "static/media/Logo4.png": "/sociality-io-case-study/static/media/Logo4.04e507cf9025b3b4df8b.png",
     "static/media/Logo2.png": "/sociality-io-case-study/static/media/Logo2.6e536aa6b2134798a0e2.png",
     "static/media/Logo5.png": "/sociality-io-case-study/static/media/Logo5.1ac8c9e9c903105a0f9f.png",
     "static/media/no-post-image.png": "/sociality-io-case-study/static/media/no-post-image.67ed9c632e4c2b064ca0.png",
-    "static/media/retweet.svg": "/sociality-io-case-study/static/media/retweet.51b143c31579ec7f1f24.svg",
+    "static/media/retweet.svg": "/sociality-io-case-study/static/media/retweet.415678988e842bfd666b.svg",
     "index.html": "/sociality-io-case-study/index.html",
-    "main.bcd07afa.css.map": "/sociality-io-case-study/static/css/main.bcd07afa.css.map",
-    "main.5eba5194.js.map": "/sociality-io-case-study/static/js/main.5eba5194.js.map"
+    "main.8a59d9a5.css.map": "/sociality-io-case-study/static/css/main.8a59d9a5.css.map",
+    "main.04614623.js.map": "/sociality-io-case-study/static/js/main.04614623.js.map"
   },
   "entrypoints": [
-    "static/css/main.bcd07afa.css",
-    "static/js/main.5eba5194.js"
+    "static/css/main.8a59d9a5.css",
+    "static/js/main.04614623.js"
   ]
 }
