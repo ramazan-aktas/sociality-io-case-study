@@ -5,7 +5,16 @@ export default function ListPostCards({ username }) {
   const dateTimeConv = new Intl.DateTimeFormat("en-GB", {
     year: "numeric",
     month: "long",
+    day: "numeric"
+  });
+  const dateTimePub = new Intl.DateTimeFormat("en-GB", {
+    year: "numeric",
+    month: "long",
     day: "numeric",
+    hour: "2-digit",
+    minute: "numeric",
+    second: "numeric",
+    hourCycle: "h24"
   });
   const innerData = data.posts_by_date;
   const byDate = Object.keys(innerData)
@@ -26,7 +35,7 @@ export default function ListPostCards({ username }) {
               status={obj.status}
               message={obj.entry.message}
               imageURL={obj.entry.image[0]}
-              dateTime={obj.published_at}
+              dateTime={dateTimePub.format(new Date(`${obj.published_at}`)).replace("at ", "")}
               channel={obj.account.channel}
             />
           ))}
