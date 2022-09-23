@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Summary from "./pages/customers/Summary";
 import Publish from "./pages/customers/Publish";
 import Engage from "./pages/customers/Engage";
